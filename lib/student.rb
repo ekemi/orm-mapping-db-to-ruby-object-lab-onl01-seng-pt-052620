@@ -91,7 +91,7 @@ class Student
             SELECT *
             FROM student
             LIMIT X
-            SQL 
-  DB[:conn].execute(sql)          
+            SQL
+  DB[:conn].execute(sql)
   end
 end
