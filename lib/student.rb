@@ -90,7 +90,7 @@ class Student
     sql = <<-SQL
             SELECT *
             FROM students
-            LIMIT X
+            LIMIT number
             SQL
   DB[:conn].execute(sql)
   end
