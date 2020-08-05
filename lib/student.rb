@@ -36,12 +36,12 @@ class Student
       self.new_from_db(row)
     end.first
 
-  #   sql = <<-SQL
-  #     INSERT INTO students (name, grade)
-  #     VALUES (?, ?)
-  #   SQL
-  #
-  #   DB[:conn].execute(sql, self.name, self.grade)
+    sql = <<-SQL
+      INSERT INTO students (name, grade)
+      VALUES (?, ?)
+    SQL
+  
+    DB[:conn].execute(sql, self.name, self.grade)
    end
 
   def self.create_table
